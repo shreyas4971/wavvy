@@ -1,84 +1,130 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+	<meta charset="UTF-8">
+    <title>My Awesome Website</title>
+
+    <!-- attach our stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
 <body>
 
-<nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar">
-<div class="w3-container w3-theme">
-  <span onclick="closeSidebar()" class="w3-button w3-display-topright w3">X</span>
-  <br>
-  <div class="w3-round-small w3-center">
-    <img  src="icon.png" alt="Logo" style="width:100%">
-  </div>
-</div>
-<h1 class="w3-bar-item">Menu</h1>
-<a class="w3-bar-item w3-button" href="#">Movies</a>
-<a class="w3-bar-item w3-button" href="#">Friends</a>
-<a class="w3-bar-item w3-button" href="#">Messages</a>
-</nav>
-<a class="w3-button w3-xlarge w3-circle w3-theme-action" style="position:fixed;bottom:48px;right:24px;">+</a>
-<header class="w3-bar w3-card w3-theme">
-  <button class="w3-bar-item w3-button w3-xxxlarge w3-hover-theme" onclick="openSidebar()">&#9776;</button>
-  <h1 class="w3-bar-item">WAVVY</h1>
-</header>
+    <!-- the header -->
+    <header>
 
-<div class="w3-container">
-<hr>
-<button onclick="myFunction()"  class="w3-btn w3-block w3-theme-l4">Surface1_6513</button>
-<div id="Demo" class="w3-dropdown-content w3-bar-block w3-border">
-      <a href="#" class="w3-bar-item w3-button">Projector</a>
-      <a href="#" class="w3-bar-item w3-button">Keyboard</a>
-</div>
+        <!-- our main logo -->
+        <a id="logo" href="index.html">
+            <img src="img/avatar.jpeg" alt="Logo">
+            <span>My Website</span>
+        </a>
 
-<button onclick="myFunction()" class="w3-btn w3-block w3-theme-l3">Surface1_6168</button>
-<div id="Demo" class="w3-dropdown-content w3-bar-block w3-border">
-      <a href="#" class="w3-bar-item w3-button">Projector</a>
-      <a href="#" class="w3-bar-item w3-button">Keyboard</a>
-</div>
+        <!-- main navigation links -->
+        <nav>
+            <ul>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Sign Up</a></li>
+            </ul>
+        </nav>
 
-<button onclick="myFunction()" class="w3-btn w3-block w3-theme-l4">Surface1_6541</button>
-<div id="Demo" class="w3-dropdown-content w3-bar-block w3-border">
-      <a href="#" class="w3-bar-item w3-button">Projector</a>
-      <a href="#" class="w3-bar-item w3-button">Keyboard</a>
-</div>
+    </header>
 
-<button onclick="myFunction()" class="w3-btn w3-block w3-theme-l3">Surface1_3651</button>
-<div id="Demo" class="w3-dropdown-content w3-bar-block w3-border">
-      <a href="#" class="w3-bar-item w3-button">Projector</a>
-      <a href="#" class="w3-bar-item w3-button">Keyboard</a>
-</div>
+    <!-- the content -->
+    <main>
 
-<button onclick="myFunction()" class="w3-btn w3-block w3-theme-l4">Surface1_6842</button>
-<div id="Demo" class="w3-dropdown-content w3-bar-block w3-border">
-      <a href="#" class="w3-bar-item w3-button" style>Projector</a>
-      <a href="#" class="w3-bar-item w3-button">Keyboard</a>
-</div>
-</div>
+        <!-- hero content -->
+        <div class="hero">
+            <!-- content for the hero -->
+            <div class="hero-content">
+                <h1 class="hero-title">Here is Title</h1>
+                <p>The best and most comprehensive website ever.</p>
 
-<script>
-function myFunction() {
-  var x = document.getElementById("Demo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-</script>
+                <a href="#">Learn More</a>
+                <a href="#">Sign Up</a>
+            </div>
+        </div>
 
+        <!-- features section -->
+        <div class="site-section">
+        <div class="site-section-inside">
 
-<script>
-closeSidebar();
-function openSidebar() {
-  document.getElementById("mySidebar").style.display = "block";
-}
+            <div class="section-header">
+                <h2>Key Features</h2>
+            </div>
 
-function closeSidebar() {
-  document.getElementById("mySidebar").style.display = "none";
-}
-</script>
+            <div class="feature-box">
+                <img src="img/like.png" alt="Easy to Use">
+                <h5>Easy to Use</h5>
+                <p>Just think of how easy this is to use. Toddlers can do it. So can you!</p>
+            </div>
+
+            <div class="feature-box">
+                <img src="img/faces.png" alt="Fun to Use">
+                <h5>Fun to Use</h5>
+                <p>Just think of how easy this is to use. Toddlers can do it. So can you!</p>
+            </div>
+
+            <div class="feature-box">
+                <img src="img/heart.png" alt="Fun to Use">
+                <h5>You'll Love It</h5>
+                <p>Just think of how easy this is to use. Toddlers can do it. So can you!</p>
+            </div>
+
+        </div>
+        </div>
+
+        <!-- testimonials section -->
+        <div class="site-section site-section-secondary">
+        <div class="site-section-inside">
+
+            <div class="section-header">
+                <h2>What the people say</h2>
+            </div>
+
+            <div class="testimonial-box">
+                <div class="testimonial-content">
+                    Their service is by far the most influential I've ever seen.
+                </div>
+                <div class="testimonial-author">
+                    <img src="img/david.jpg" alt="David East">
+                    <h5>David East</h5>
+                    <span>King of Firebase</span>
+                </div>
+            </div>
+
+            <div class="testimonial-box">
+                <div class="testimonial-content">
+                    Their service is by far the most influential I've ever seen.
+                </div>
+                <div class="testimonial-author">
+                    <img src="img/holly.jpg" alt="Holly Lloyd">
+                    <h5>Holly Lloyd</h5>
+                    <span>Queen of Scotch</span>
+                </div>
+            </div>
+
+            <div class="testimonial-box">
+                <div class="testimonial-content">
+                    Their service is by far the most influential I've ever seen.
+                </div>
+                <div class="testimonial-author">
+                    <img src="img/brad.jpg" alt="Brad Green">
+                    <h5>Brad Green</h5>
+                    <span>King of Angular</span>
+                </div>
+            </div>
+
+        </div>
+        </div>
+
+    </main>
+
+    <!-- the footer -->
+    <footer>
+        <img src="img/avatar.jpeg" alt="Footer Logo">
+        <span>My Website<br>Copyright &copy; 2016-3010 </span>
+    </footer>
 
 </body>
+</html>
